@@ -1,0 +1,37 @@
+<form id="myForm">
+    <head><h2>Registration Form</h2></head><br>
+    <input type="text" id="UserName" placeholder="UserName"><br><br>
+    <input type="Email" id="Email" placeholder="Email"><br><br>
+    <input type="phonenumber" id="phonenumber" placeholder="phonenumber"><br><br>
+    <input type="password" id="password" placeholder="password"><br><br>
+    <input type="Confirmpassword" id="Confirmpassword" placeholder="Confirmpassword"><br><br>
+    <button type="Register">Register</button>
+  </form>
+  
+  <style>
+    button{
+        color: white;
+        background-color: black;
+    }
+    #myform{
+        background-color: pink;
+        padding: 5%;
+        margin-left: 200px;
+        margin-right: 800px;
+    }
+</style>
+  <script>
+    const form = document.getElementById('myForm');
+  
+    form.addEventListener('Register', function(event) {
+      const Username = document.getElementById('Username').value;
+      const Email = document.getElementById('Email').value;
+      const phonenumber = document.getElementById('phonenumber').value;
+      const password = document.getElementById('password').value;
+      const Confirmpassword = document.getElementById('Confirmpassword').value;
+  
+      if (username.trim() === '' || Email.trim() === '' || phonenumber.trim() === '' || password.trim() === '' || confirmpassword.trim() === '') {
+        event.preventDefault();
+      }
+    });
+  </script>
